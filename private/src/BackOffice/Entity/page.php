@@ -74,6 +74,33 @@ class page extends Entity
 	
 	
 	/**
+	 * url
+	 *
+	 * @access private
+	 * @var    string
+	 *
+	 */
+    private $url = null;
+	
+	/**
+	 * title
+	 *
+	 * @access private
+	 * @var    string
+	 *
+	 */
+    private $title = null;
+	
+	/**
+	 * description
+	 *
+	 * @access private
+	 * @var    string
+	 *
+	 */
+    private $description = null;
+	
+	/**
 	 * get id of page
 	 *
 	 * @access public
@@ -188,4 +215,76 @@ class page extends Entity
 		$this->plugin = $plugin;
 		return $this;
 	}
-}
+
+	/**
+	 * get url of page
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function get_url()
+	{
+		return $this->url;
+	}
+
+	/**
+	 * set url of page
+	 *
+	 * @access public
+	 * @param  string $url url of page
+	 * @return \Venus\src\BackOffice\Entity\page
+	 */
+	public function set_url($url) 
+	{
+		$this->url = $url;
+		return $this;
+	}
+	
+	/**
+	 * get title of page
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function get_title()
+	{
+		return $this->title;
+	}
+
+	/**
+	 * set title of page
+	 *
+	 * @access public
+	 * @param  string $title title of page
+	 * @return \Venus\src\BackOffice\Entity\page
+	 */
+	public function set_title($title) 
+	{
+		$this->title = $title;
+		return $this;
+	}
+	
+	/**
+	 * get description of page
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function get_description()
+	{
+		return $this->description;
+	}
+
+	/**
+	 * set description of page
+	 *
+	 * @access public
+	 * @param  string $description description of page
+	 * @return \Venus\src\BackOffice\Entity\page
+	 */
+	public function set_description($description) 
+	{
+		$this->description = $description;
+		return $this;
+	}
+	}

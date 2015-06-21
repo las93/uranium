@@ -81,11 +81,15 @@ class Page extends Controller
      */
     public function add()
     {   
-        if (isset($_POST) && count($_POST) > 0 && isset($_POST['name']) && isset($_POST['id_plugin'])) {
+        if (isset($_POST) && count($_POST) > 0 && isset($_POST['name']) && isset($_POST['id_plugin']) && isset($_POST['url'])
+            && isset($_POST['title']) && isset($_POST['description'])) {
 
             $oEntityUser = new EntityPage;
             $oEntityUser->set_name($_POST['name'])
                         ->set_id_plugin($_POST['id_plugin'])
+                        ->set_url($_POST['url'])
+                        ->set_title($_POST['title'])
+                        ->set_description($_POST['description'])
                         ->save();
             
             $this->redirect($this->url->getUrl('page').'?msg='.urlencode($this->translator->_('AddedSuccessfully')));
@@ -116,11 +120,15 @@ class Page extends Controller
         $oPage = new ModelPage;
         $oOnePage = $oPage->findOneByid($id);
         
-        if (isset($_POST) && count($_POST) > 0 && isset($_POST['name']) && isset($_POST['id_plugin'])) {
+        if (isset($_POST) && count($_POST) > 0 && isset($_POST['name']) && isset($_POST['id_plugin']) && isset($_POST['url'])
+            && isset($_POST['title']) && isset($_POST['description'])) {
 
             
             $oOnePage->set_name($_POST['name'])
                      ->set_id_plugin($_POST['id_plugin'])
+                     ->set_url($_POST['url'])
+                     ->set_title($_POST['title'])
+                     ->set_description($_POST['description'])
                      ->save();
             
             $this->redirect($this->url->getUrl('page').'?msg='.urlencode($this->translator->_('ModifiedSuccessfully')));

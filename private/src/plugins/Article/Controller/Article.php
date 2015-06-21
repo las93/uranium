@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Controller of the plugin Symlink
+ * Controller of the plugin Article
  *
  * @category  	Venus\src
- * @package   	Venus\src\plugins\Symlink\Controller
+ * @package   	Venus\src\plugins\Article\Controller
  * @author    	Judicaël Paquet <judicael.paquet@gmail.com>
  * @copyright 	Copyright (c) 2013-2015 PAQUET Judicaël FR Inc. (https://github.com/las93)
  * @license   	https://github.com/las93/uranium/blob/master/LICENSE.md Tout droit réservé à PAQUET Judicaël
@@ -13,17 +13,17 @@
  * @link      	https://github.com/las93
  * @since     	1.0
  */
-namespace Venus\src\plugins\Symlink\Controller;
+namespace Venus\src\plugins\Article\Controller;
 
-use \Venus\src\BackOffice\Entity\plugin_symlink     as EntityPluginSymlink;
-use \Venus\src\BackOffice\Model\plugin_symlink      as PluginSymlink;
-use \Venus\src\plugins\common\Controller            as Controller;
+use \Venus\src\plugins\common\Controller        as Controller;
+use \Venus\src\BackOffice\Entity\plugin_article as EntityPluginArticle;
+use \Venus\src\BackOffice\Model\plugin_article  as PluginArticle;
 
 /**
  * Controller to test
  *
  * @category    Venus\src
- * @package     Venus\src\plugins\Symlink\Controller
+ * @package     Venus\src\plugins\Article\Controller
  * @author      Judicaël Paquet <judicael.paquet@gmail.com>
  * @copyright   Copyright (c) 2013-2015 PAQUET Judicaël FR Inc. (https://github.com/las93)
  * @license     https://github.com/las93/uranium/blob/master/LICENSE.md Tout droit réservé à PAQUET Judicaël
@@ -32,7 +32,7 @@ use \Venus\src\plugins\common\Controller            as Controller;
  * @link        https://github.com/las93
  * @since       1.0
  */
-class Symlink extends Controller
+class Article extends Controller
 {
     /**
      * Constructor
@@ -55,24 +55,24 @@ class Symlink extends Controller
      */
     public function update($oThis, $iId)
     {
-        $oPluginSymlink = new PluginSymlink;
-        $oOnePluginSymlink = $oPluginSymlink->findOneByid_page($iId);
+        $oPluginArticle = new PluginArticle;
+        $oOnePluginArticle = $oPluginArticle->findOneByid_page($iId);
+        
+        if (isset($_POST) && count($_POST) > 0 && isset($_POST['content']) && isset($_POST['title'])) {
 
-        if (isset($_POST) && count($_POST) > 0 && isset($_POST['type']) && isset($_POST['value'])) {
+            if ($oOnePluginArticle) {
 
-            if ($oOnePluginSymlink) {
-
-                $oOnePluginSymlink->set_type($_POST['type'])
-                                  ->set_value($_POST['value'])
+                $oOnePluginArticle->set_content($_POST['content'])
+                                  ->set_title($_POST['title'])
                                   ->save();
                 
                 $this->redirect($this->url->getUrl('page').'?msg='.urlencode($this->translator->_('ModifiedSuccessfully')));
             }
             else {
 
-                $oOnePluginSymlink = new EntityPluginSymlink;
-                $oOnePluginSymlink->set_type($_POST['type'])
-                                  ->set_value($_POST['value'])
+                $oOnePluginArticle = new EntityPluginArticle;
+                $oOnePluginArticle->set_content($_POST['content'])
+                                  ->set_title($_POST['title'])
                                   ->set_id_page($iId)
                                   ->save();
                 
@@ -81,21 +81,20 @@ class Symlink extends Controller
         }
         
         $oThis->layout
-              ->assign('model', '/src/plugins/Symlink/View/Update.tpl')
+              ->assign('model', '/src/plugins/Article/View/Update.tpl')
               ->assign('sTitle', $this->translator->_('ModifyPage'))
               ->assign('sSecondUrl', $this->url->getUrl('page'))
               ->assign('sThirdTitle', $this->translator->_('ModifyPage'))
-              ->assign('oPluginSymlink', $oOnePluginSymlink);
+              ->assign('oPluginArticle', $oOnePluginArticle);
     }
 
     /**
-     * install method
+     * the main page
      *
      * @access public
-     * @param  string $sPortal
      * @return void
      */
-    public function install($sPortal)
+    public function install()
     {
         $this->installDb;
     }

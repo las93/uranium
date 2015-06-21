@@ -4,7 +4,7 @@
         <table>
             <tr>
                 <td>{gettext word='Name'}:</td>
-                <td><input name="name" class="form-control" type="text" placeholder="{gettext word='EnterTheName'}" required{if $oPage} value="{$oPage->get_name()}"{/if}></td>
+                <td><input name="name" class="form-control" type="text" placeholder="{gettext word='EnterTheName'}" required{if $oPage} value="{$oPage->get_name()}"{/if} maxlength="30"></td>
             </tr>
             <tr>
                 <td>{gettext word='Type'}:</td>
@@ -15,6 +15,18 @@
                         {/foreach}
                     </select>
                 </td>
+            </tr>
+            <tr>
+                <td>{gettext word='Url'}:</td>
+                <td><input name="url" class="form-control" type="text" placeholder="{gettext word='EnterTheUrl'}" required{if $oPage} value="{$oPage->get_url()}"{/if} maxlength="200"></td>
+            </tr>
+            <tr>
+                <td>{gettext word='Title'}:</td>
+                <td><input name="title" class="form-control" type="text" placeholder="{gettext word='EnterTheTitle'}" required{if $oPage} value="{$oPage->get_title()}"{/if} maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>{gettext word='Description'}:</td>
+                <td><input name="description" class="form-control" type="text" placeholder="{gettext word='EnterTheDescription'}" required{if $oPage} value="{$oPage->get_description()}"{/if} maxlength="250"></td>
             </tr>
             <tr>
                 <td></td>

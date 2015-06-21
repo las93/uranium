@@ -18,6 +18,12 @@
     "Validate":"Validate",
     "ModifyPage":"Modify the page",
     "EnterTheContent":"Enter the content",
+    "Description":"Description",
+    "EnterTheDescription":"Enter the description",
+    "Title":"Title",
+    "EnterTheTitle":"Enter the title",
+    "Url":"Url",
+    "EnterTheUrl":"Enter the URL",
 
     "Boards":"Boards",
     "Projects":"Projects",

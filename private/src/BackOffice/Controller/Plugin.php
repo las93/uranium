@@ -56,7 +56,7 @@ class Plugin extends Controller
         $oPage = new ModelPage;
         $oOnePage = $oPage->findOneByid($id);
         
-        $sClassName = 'Venus\src\plugins\FreeHtml\Controller\\'.$oOnePage->get_plugin()->get_code();
+        $sClassName = 'Venus\src\plugins\\'.$oOnePage->get_plugin()->get_code().'\Controller\\'.$oOnePage->get_plugin()->get_code();
         $oClass = new $sClassName;
         $oClass->update($this, $id);
 
