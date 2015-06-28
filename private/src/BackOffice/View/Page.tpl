@@ -3,6 +3,9 @@
                 <section class="content">
                     <!-- START ALERTS AND CALLOUTS -->
                     <div class="row">
+                        {if $app.get.id}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{url alias='page'}">&lt;&lt;&nbsp;Return</a>{/if}<br/><br/>
+                    </div>
+                    <div class="row">
                         {if $app.get.msg}
                             <div class="alert alert-success alert-dismissable">
                                 <i class="fa fa-check"></i>
@@ -30,6 +33,7 @@
                                             <th>{gettext word='Name'}</th>
                                             <th>{gettext word='Type'}</th>
                                             <th>{gettext word='Options'}</th>
+                                            <th>{gettext word='Children'}</th>
                                         </tr>
                                         {foreach from=$aPages key=$iKey item=$oPage}
                                         <tr>
@@ -41,6 +45,7 @@
                                                 &nbsp;&nbsp;&nbsp;
                                                 <a href="javascript:void(0);" onClick="if (confirm('{gettext word='WouldYouReallyDeleteIt'}')) { window.location.href='{url alias='page'}?delete={$oPage->get_id()}'; }"><i class="fa fa-ban"></i></a>
                                             </td>
+                                            <td>{if count($oPage->get_page()) > 0}<a href="{url alias='page'}?id={$oPage->get_id()}"><i class="fa fa-eye"></i></a>{else}NO{/if}</td>
                                         </tr>
                                         {/foreach}
                                     </table>

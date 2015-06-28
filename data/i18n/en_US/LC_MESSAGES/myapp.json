@@ -24,6 +24,9 @@
     "EnterTheTitle":"Enter the title",
     "Url":"Url",
     "EnterTheUrl":"Enter the URL",
+    "Children":"Children",
+    "Parent":"Parent",
+    "NoParent":"No parent",
 
     "Boards":"Boards",
     "Projects":"Projects",

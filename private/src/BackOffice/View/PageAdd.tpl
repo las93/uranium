@@ -7,6 +7,17 @@
                 <td><input name="name" class="form-control" type="text" placeholder="{gettext word='EnterTheName'}" required{if $oPage} value="{$oPage->get_name()}"{/if} maxlength="30"></td>
             </tr>
             <tr>
+                <td>{gettext word='Parent'}:</td>
+                <td>
+                    <select name='id_parent' class="form-control">
+                        <option value="">-- {gettext word='NoParent'} --</option>
+                        {foreach from=$aPages item=$oParent}
+                            <option value='{$oParent->get_id()}'{if isset($app.post.id_parent) && $oParent->get_id() == $app.post.id_parent} selected="selected"{/if}>{$oParent->get_name()}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <tr>
                 <td>{gettext word='Type'}:</td>
                 <td>
                     <select name='id_plugin' class="form-control">

@@ -63,8 +63,11 @@ class Page extends Controller
             $_GET['msg'] = $this->translator->_('ItsDeleted');
         }
         
+        if (!isset($_GET['id'])) { $iIdParent = 0; }
+        else { $iIdParent = $_GET['id']; }
+        
 	    $oPage = new ModelPage;
-	    $aPages = $oPage->findAll();
+	    $aPages = $oPage->findByid_parent($iIdParent);
 	    
 	    $this->layout
              ->assign('sTitle', $this->translator->_('ManagePages'))
@@ -86,6 +89,7 @@ class Page extends Controller
 
             $oEntityUser = new EntityPage;
             $oEntityUser->set_name($_POST['name'])
+                        ->set_id_parent($_POST['id_parent'])
                         ->set_id_plugin($_POST['id_plugin'])
                         ->set_url($_POST['url'])
                         ->set_title($_POST['title'])
@@ -98,6 +102,9 @@ class Page extends Controller
         $oPlugin = new Plugin;
         $aPlugins = $oPlugin->findAll();
         
+	    $oPage = new ModelPage;
+	    $aPages = $oPage->findAll();
+        
         $this->layout
 			 ->assign('model', '/src/BackOffice/View/PageAdd.tpl')
              ->assign('sTitle', $this->translator->_('ManagePages'))
@@ -105,6 +112,7 @@ class Page extends Controller
              ->assign('sSecondUrl', $this->url->getUrl('page'))
              ->assign('sThirdTitle', $this->translator->_('AddPage'))
              ->assign('aPlugins', $aPlugins)
+             ->assign('aPages', $aPages)
              ->display();
     }
 
@@ -125,6 +133,7 @@ class Page extends Controller
 
             
             $oOnePage->set_name($_POST['name'])
+                     ->set_id_parent($_POST['id_parent'])
                      ->set_id_plugin($_POST['id_plugin'])
                      ->set_url($_POST['url'])
                      ->set_title($_POST['title'])
@@ -136,6 +145,9 @@ class Page extends Controller
         
         $oPlugin = new Plugin;
         $aPlugins = $oPlugin->findAll();
+        
+	    $oPage = new ModelPage;
+	    $aPages = $oPage->findAll();
 
         $this->layout
 			 ->assign('model', '/src/BackOffice/View/PageAdd.tpl')
@@ -145,6 +157,7 @@ class Page extends Controller
              ->assign('sThirdTitle', $this->translator->_('AddPage'))
              ->assign('oPage', $oOnePage)
              ->assign('aPlugins', $aPlugins)
+             ->assign('aPages', $aPages)
              ->display();
     }
 }

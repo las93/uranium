@@ -24,7 +24,7 @@ tinymce.init({
         <table>
             <tr>
                 <td>{gettext word='Content'}:</td>
-                <td><textarea name="content" class="form-control" type="text" placeholder="{gettext word='EnterTheContent'}" required style="width:1000px;height:500px;">{if $oPluginFreeHtml}{$oPluginFreeHtml->get_content()}{/if}</textarea></td>
+                <td><textarea name="content" placeholder="{gettext word='EnterTheContent'}" style="width:1000px;height:500px;" novalidate>{if $oPluginFreeHtml}{$oPluginFreeHtml->get_content()}{/if}</textarea></td>
             </tr>
             <tr>
                 <td></td>

@@ -44,6 +44,18 @@ class page extends Entity
     private $id = null;
 	
 	/**
+	 * page Entity
+	 *
+	 * @access private
+	 * @var    page
+	 * @join
+	 *
+	 */
+    private $page = null;
+	
+	
+	
+	/**
 	 * name
 	 *
 	 * @access private
@@ -101,6 +113,27 @@ class page extends Entity
     private $description = null;
 	
 	/**
+	 * id_parent
+	 *
+	 * @access private
+	 * @var    int
+	 *
+	 */
+    private $id_parent = null;
+	
+	/**
+	 * parent_page Entity
+	 *
+	 * @access private
+	 * @var    page
+	 * @join
+	 *
+	 */
+    private $parent_page = null;
+	
+	
+	
+	/**
 	 * get id of page
 	 *
 	 * @access public
@@ -124,6 +157,47 @@ class page extends Entity
 		return $this;
 	}
 	
+	/**
+	 * get page entity join by id of page
+	 *
+	 * @access public
+	 * @param  array $aWhere
+	 * @join
+	 * @return array
+	 */
+	public function get_page($aWhere = array())
+	{
+		if ($this->page === null) {
+
+			$oOrm = new Orm;
+
+			$oOrm->select(array('*'))
+				 ->from('page');
+												   
+	        $aWhere['id_parent'] = $this->get_id();
+											
+													  
+            $this->page = $oOrm->where($aWhere)
+						           ->load(false, '\Venus\src\BackOffice\Entity\\');
+        }
+
+		return $this->page;
+	}
+	
+	/**
+	 * set page entity join by id of page
+	 *
+	 * @access public
+	 * @param  \Venus\src\BackOffice\Entity\page  $page page entity
+	 * @join
+	 * @return array
+	 */
+	public function set_page(array $page)
+	{
+		$this->page = $page;
+		return $this;
+	}
+
 	/**
 	 * get name of page
 	 *
@@ -287,4 +361,72 @@ class page extends Entity
 		$this->description = $description;
 		return $this;
 	}
+	
+	/**
+	 * get id_parent of page
+	 *
+	 * @access public
+	 * @return int
+	 */
+	public function get_id_parent()
+	{
+		return $this->id_parent;
 	}
+
+	/**
+	 * set id_parent of page
+	 *
+	 * @access public
+	 * @param  int $id_parent id_parent of page
+	 * @return \Venus\src\BackOffice\Entity\page
+	 */
+	public function set_id_parent($id_parent) 
+	{
+		$this->id_parent = $id_parent;
+		return $this;
+	}
+	
+	/**
+	 * get parent_page entity join by id_parent of page
+	 *
+	 * @access public
+	 * @param  array $aWhere
+	 * @join
+	 * @return \Venus\src\BackOffice\Entity\page
+	 */
+	public function get_parent_page($aWhere = array())
+	{
+		if ($this->parent_page === null) {
+
+			$oOrm = new Orm;
+
+			$oOrm->select(array('*'))
+				 ->from('page');
+												   
+	        $aWhere['id'] = $this->get_id_parent();
+											
+													  
+            $aResult = $oOrm->where($aWhere)
+						           ->load(false, '\Venus\src\BackOffice\Entity\\');
+
+          if (count($aResult) > 0) { $this->parent_page = $aResult[0]; }
+          else { $this->parent_page = array(); }
+        }
+
+		return $this->parent_page;
+	}
+	
+	/**
+	 * set parent_page entity join by id_parent of page
+	 *
+	 * @access public
+	 * @param  \Venus\src\BackOffice\Entity\page  $parent_page page entity
+	 * @join
+	 * @return \Venus\src\BackOffice\Entity\page
+	 */
+	public function set_parent_page(\Venus\src\BackOffice\Entity\page $parent_page)
+	{
+		$this->parent_page = $parent_page;
+		return $this;
+	}
+}
