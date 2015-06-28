@@ -12,7 +12,7 @@
                     <select name='id_parent' class="form-control">
                         <option value="">-- {gettext word='NoParent'} --</option>
                         {foreach from=$aPages item=$oParent}
-                            <option value='{$oParent->get_id()}'{if isset($app.post.id_parent) && $oParent->get_id() == $app.post.id_parent} selected="selected"{/if}>{$oParent->get_name()}</option>
+                            <option value='{$oParent->get_id()}'{if isset($app.post.id_parent) && $oParent->get_id() == $app.post.id_parent} selected="selected"{elseif $app.get.parent_id == $oParent->get_id()} selected="selected"{/if}>{$oParent->get_name()}</option>
                         {/foreach}
                     </select>
                 </td>

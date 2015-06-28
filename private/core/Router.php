@@ -99,13 +99,16 @@ class Router implements LoggerAwareInterface
 		if (Request::isHttpRequest()) {
         
 		    // Search public files in all plugins
-		    foreach (Config::get('Plugins')->list as $iKey => $sPlugin) {
-		        
-		        if (file_exists(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR.$sPlugin.DIRECTORY_SEPARATOR.'public'.$_SERVER['REQUEST_URI'])) {
-		            
-		            echo file_get_contents(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR.$sPlugin.DIRECTORY_SEPARATOR.'public'.$_SERVER['REQUEST_URI']);
-                    exit;
-		        }
+		    if ($_SERVER['REQUEST_URI'] !== '/') {
+	
+    		    foreach (Config::get('Plugins')->list as $iKey => $sPlugin) {
+    		        
+    		        if (file_exists(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR.$sPlugin.DIRECTORY_SEPARATOR.'public'.$_SERVER['REQUEST_URI'])) {
+    		            
+    		            echo file_get_contents(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR.$sPlugin.DIRECTORY_SEPARATOR.'public'.$_SERVER['REQUEST_URI']);
+                        exit;
+    		        }
+    		    }
 		    }
 		    
 			foreach (Config::get('Route') as $sHost => $oHost) {

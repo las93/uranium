@@ -55,12 +55,12 @@ class Home extends Controller {
 
 	public function show() {
 
-	    $this->view
-	         ->assign('test', 1)
-	         ->display();
+	    $oPage = new \stdClass();
+	    $oPage->title = "Gestion de projet en Agile Scrum | Agile-Scrum.com";
+	    $oPage->description = "Découvrez la gestion de projet en Agile Scrum et tous ces secrets. Vous saurez tout sur cette méthodologie Scrum | Agile-Scrum.com";
 	    
-		echo "Hello World";
-
-	    exit;
+	    $this->layout
+	         ->assign('oPage', $oPage)
+	         ->display();
 	}
 }

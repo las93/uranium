@@ -63,8 +63,20 @@ class Page extends Controller
             $_GET['msg'] = $this->translator->_('ItsDeleted');
         }
         
-        if (!isset($_GET['id'])) { $iIdParent = 0; }
-        else { $iIdParent = $_GET['id']; }
+        if (!isset($_GET['id'])) { 
+            
+            $iIdParent = 0;
+        }
+        else { 
+            
+            $iIdParent = $_GET['id']; 
+            
+            $oParentPage = new ModelPage;
+            $oParentPage = $oParentPage->findOneByid($iIdParent);
+            
+	        $this->layout
+                 ->assign('oParentPage', $oParentPage);
+        }
         
 	    $oPage = new ModelPage;
 	    $aPages = $oPage->findByid_parent($iIdParent);
@@ -96,7 +108,7 @@ class Page extends Controller
                         ->set_description($_POST['description'])
                         ->save();
             
-            $this->redirect($this->url->getUrl('page').'?msg='.urlencode($this->translator->_('AddedSuccessfully')));
+            $this->redirect($this->url->getUrl('page').'?msg='.urlencode($this->translator->_('AddedSuccessfully')).'&id='.$_GET['parent_id']);
         }
         
         $oPlugin = new Plugin;
@@ -140,7 +152,7 @@ class Page extends Controller
                      ->set_description($_POST['description'])
                      ->save();
             
-            $this->redirect($this->url->getUrl('page').'?msg='.urlencode($this->translator->_('ModifiedSuccessfully')));
+            $this->redirect($this->url->getUrl('page').'?msg='.urlencode($this->translator->_('ModifiedSuccessfully')).'&id='.$_GET['parent_id']);
         }
         
         $oPlugin = new Plugin;
