@@ -27,6 +27,7 @@
     "Children":"Children",
     "Parent":"Parent",
     "NoParent":"No parent",
+    "Order":"Order",
 
     "Boards":"Boards",
     "Projects":"Projects",

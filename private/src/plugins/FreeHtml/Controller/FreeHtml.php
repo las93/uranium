@@ -63,6 +63,7 @@ class FreeHtml extends Controller
             if ($oOnePluginFreeHtml) {
 
                 $oOnePluginFreeHtml->set_content($_POST['content'])
+                                   ->set_type($_POST['type'])
                                    ->save();
                 
                 $this->redirect($this->url->getUrl('page').'?msg='.urlencode($this->translator->_('ModifiedSuccessfully')));
@@ -71,6 +72,7 @@ class FreeHtml extends Controller
 
                 $oOnePluginFreeHtml = new EntityPluginFreeHtml;
                 $oOnePluginFreeHtml->set_content($_POST['content'])
+                                   ->set_type($_POST['type'])
                                    ->set_id_page($iId)
                                    ->save();
                 

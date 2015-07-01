@@ -16,7 +16,9 @@
 
 namespace Venus\src\FrontOffice\Controller;
 
-use \Venus\src\FrontOffice\common\Controller as Controller;
+use \Venus\src\FrontOffice\common\Controller        as Controller;
+use \Venus\src\FrontOffice\Model\page               as Page;
+use \Venus\src\FrontOffice\Model\plugin_freehtml    as PluginFreeHtml;
 
 /**
  * Controller to test
@@ -55,12 +57,43 @@ class Home extends Controller {
 
 	public function show() {
 
-	    $oPage = new \stdClass();
-	    $oPage->title = "Gestion de projet en Agile Scrum | Agile-Scrum.com";
-	    $oPage->description = "Découvrez la gestion de projet en Agile Scrum et tous ces secrets. Vous saurez tout sur cette méthodologie Scrum | Agile-Scrum.com";
+	    $oPage = new Page;
+	    $oActualPage = $oPage->findOneByurl($_SERVER['REQUEST_URI']);
+
+	    $oPage = new Page;
+	    $aSummaryPages = $oPage->getPageInOrder(0);
+	    
+	    if (isset($_POST) && isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email'])
+	        && isset($_POST['message'])) {
+	        
+	        $this->mail
+	             ->setSubject('Mail de contact de Scrum-Agile.com')
+	             ->setMessage($_POST['message']."\n\nPhone: ".$_POST['phone']."\n\nNom: ".$_POST['name'])
+	             ->setFrom($_POST['email'])
+	             ->addRecipient('judicael.paquet@scrum-agile.com')
+	             ->send();
+	    }
+
+	    if ($oActualPage->get_id_plugin() == 1) {
+	        
+	        $oPluginFreeHtml = new PluginFreeHtml;
+	        $oContentPage = $oPluginFreeHtml->findOneByid_page($oActualPage->get_id());
+	        
+	        if ($oContentPage->get_type() == 'template') {
+	            
+	            $this->layout
+	                 ->assign('model', '/src/FrontOffice/View/'.strip_tags($oContentPage->get_content()));
+	        }
+	        else {
+	            
+	            $this->layout
+	                 ->assign('sContentModel', $oContentPage->get_content());
+	        }
+	    }
 	    
 	    $this->layout
-	         ->assign('oPage', $oPage)
+	         ->assign('oPage', $oActualPage)
+	         ->assign('aSummary', $aSummaryPages)
 	         ->display();
 	}
 }

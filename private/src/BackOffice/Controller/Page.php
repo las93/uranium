@@ -79,7 +79,7 @@ class Page extends Controller
         }
         
 	    $oPage = new ModelPage;
-	    $aPages = $oPage->findByid_parent($iIdParent);
+	    $aPages = $oPage->getPageInOrder($iIdParent);
 	    
 	    $this->layout
              ->assign('sTitle', $this->translator->_('ManagePages'))

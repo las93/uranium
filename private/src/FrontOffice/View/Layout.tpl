@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>{$oPage->title}</title>
-    <meta name="Description" content="{$oPage->description}">
+    <title>{$oPage->get_title()}</title>
+    <meta name="Description" content="{$oPage->get_description()}">
     <!-- normalizar -->
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="/css/normalize.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -18,19 +18,19 @@
 
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!--fontawesome-->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
 
     <!--animation-->
-    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
 
     <!--main css-->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 
     <!--main css-->
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -68,17 +68,16 @@
 
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="#">Agile Scrum</a></li>
-                                    <li><a href="#">blog</a></li>
-                                    <li><a href="#">Formations</a></li>
-                                    <li><a href="#">Formation en ligne</a></li>
-                                    <li><a href="#">Contactez-nous</a></li>
+                                    {foreach from=$aSummary item=$oSummaryPage}
+                                        <li><a href="{$oSummaryPage->get_url()}">{$oSummaryPage->get_name()}</a></li>
+                                    {/foreach}
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {if $app.server.REQUEST_URI == '/'}
             <div class="row">
                 <div class="col-md-12">
                     <div class="header_area_text">
@@ -88,12 +87,33 @@
                     </div>
                 </div>
             </div>
+            {/if}
         </div>
     </header>
     <!-- end header top area -->
 
-    {include file=$model}
+    {if !isset($sContentModel)}{include file=$model}{else}{$sContentModel}{/if}
 
+
+    <section id="caal_to_action_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="call_to_action_text wow slideInLeft" data-wow-duration="2s">
+                        <h2>Etes-vous prêt à adopter le Scrum ?</h2>
+                        <p>Cliquez ici pour découvrir nos formations pour basculer votre entité en Scrum</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="call_project text-right wow slideInRight" data-wow-duration="2s">
+                        <a href="">Formations en ligne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end call to action area -->
+    
     <footer id="footer_area">
         <div class="container">
             <div class="row">
@@ -104,12 +124,10 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="company_address wow slideInDown">
-                        <h2>PAQUET JUDICAEL</h2>
-                        <p>Managert IT & Scrum Master &nbsp; Rue du Commerce
+                        <h2>QUI SUIS-JE ?</h2>
+                        <p>Paquet Judicaël<br/>Manager IT & Scrum Master<br/>Rue du Commerce
                         </p>
-                        <h3>
-                            +33(6) 88 89 78 23
-                            judicael.paquet@scrum-agile.com </h3>
+                        <h3>judicael.paquet@scrum-agile.com</h3>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -133,19 +151,23 @@
     </footer>
 
     <!-- main jQuery-->
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    
+    <!-- main jQuery-->
+    <script src="/js/jquery.parallax-1.1.3.js"></script>
 
     <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <!-- wow js -->
-    <script src="js/wow.min.js"></script>
+    <script src="/js/wow.min.js"></script>
     <script>
         new WOW().init();
+        $("#header_area").parallax(0, 0.7, true);
     </script>
 
     <!-- main js -->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

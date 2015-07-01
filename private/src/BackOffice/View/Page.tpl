@@ -34,6 +34,7 @@
                                             <th>{gettext word='Type'}</th>
                                             <th>{gettext word='Options'}</th>
                                             <th>{gettext word='Children'}</th>
+                                            <th>{gettext word='Order'}</th>
                                         </tr>
                                         {foreach from=$aPages key=$iKey item=$oPage}
                                         <tr>
@@ -46,6 +47,7 @@
                                                 <a href="javascript:void(0);" onClick="if (confirm('{gettext word='WouldYouReallyDeleteIt'}')) { window.location.href='{url alias='page'}?delete={$oPage->get_id()}'; }"><i class="fa fa-ban"></i></a>
                                             </td>
                                             <td>{if count($oPage->get_page()) > 0}<a href="{url alias='page'}?id={$oPage->get_id()}"><i class="fa fa-eye"></i></a>{else}NO{/if}</td>
+                                            <td>{if $iKey != 0}<i class="fa fa-arrow-circle-up"></i>{else}&nbsp;&nbsp;&nbsp;&nbsp;{/if} {if $iKey != count($aPages) - 1}<i class="fa fa-arrow-circle-down"></i>{/if}</td>
                                         </tr>
                                         {/foreach}
                                     </table>

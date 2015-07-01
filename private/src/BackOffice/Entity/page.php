@@ -134,6 +134,15 @@ class page extends Entity
 	
 	
 	/**
+	 * order
+	 *
+	 * @access private
+	 * @var    int
+	 *
+	 */
+    private $order = null;
+	
+	/**
 	 * get id of page
 	 *
 	 * @access public
@@ -429,4 +438,28 @@ class page extends Entity
 		$this->parent_page = $parent_page;
 		return $this;
 	}
-}
+
+	/**
+	 * get order of page
+	 *
+	 * @access public
+	 * @return int
+	 */
+	public function get_order()
+	{
+		return $this->order;
+	}
+
+	/**
+	 * set order of page
+	 *
+	 * @access public
+	 * @param  int $order order of page
+	 * @return \Venus\src\BackOffice\Entity\page
+	 */
+	public function set_order($order) 
+	{
+		$this->order = $order;
+		return $this;
+	}
+	}

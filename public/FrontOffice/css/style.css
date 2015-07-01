@@ -69,7 +69,7 @@ p {
 /************** header css ******************/
 
 #header_area {
-    background: url(../img/bg.jpg);
+    background: url(/img/bg.jpg);
     padding-top: 35px;
     background-size: cover;
     background-position: center center

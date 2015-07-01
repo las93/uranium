@@ -32,4 +32,22 @@ use \Venus\core\Model as Model;
  */
 class page extends Model 
 {
+    /**
+     * get page in order
+     * 
+     * @access public
+     * @param  int $iIdParent
+     * @return array[\Venus\src\BackOffice\Entity\page]
+     */
+    public function getPageInOrder($iIdParent)
+    {
+        $aResult = $this->orm
+                        ->select(['*'])
+                        ->from($this->_sTableName, 'p')
+                        ->where($this->where->whereEqual('p.id_parent', $iIdParent))
+                        ->orderBy(['p.order'])
+                        ->load();
+        	
+        return $aResult;
+    }
 }

@@ -53,6 +53,15 @@ class plugin_freehtml extends Entity
     private $id_page = null;
 	
 	/**
+	 * type
+	 *
+	 * @access private
+	 * @var    string
+	 *
+	 */
+    private $type = null;
+	
+	/**
 	 * content
 	 *
 	 * @access private
@@ -106,6 +115,30 @@ class plugin_freehtml extends Entity
 	public function set_id_page($id_page) 
 	{
 		$this->id_page = $id_page;
+		return $this;
+	}
+	
+	/**
+	 * get type of plugin_freehtml
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function get_type()
+	{
+		return $this->type;
+	}
+
+	/**
+	 * set type of plugin_freehtml
+	 *
+	 * @access public
+	 * @param  string $type type of plugin_freehtml
+	 * @return \Venus\src\BackOffice\Entity\plugin_freehtml
+	 */
+	public function set_type($type) 
+	{
+		$this->type = $type;
 		return $this;
 	}
 	

@@ -52,7 +52,7 @@ class I18n extends CoreI18n
                 $fCallBack = function($sValue) use ($oJson)
                 {    
                     if (isset($oJson->$sValue)) { return $oJson->$sValue; }
-                    else { return $sValue; }
+                    else { return ''; }
                 };
             }
             

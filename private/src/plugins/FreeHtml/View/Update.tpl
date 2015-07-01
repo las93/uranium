@@ -23,8 +23,17 @@ tinymce.init({
     <form name="f3" method="post">
         <table>
             <tr>
+                <td>{gettext word='Type'}:</td>
+                <td>
+                    <div class="form-group"> 
+                        <input type="radio" name="type" value="template" class="minimal" {if $oPluginFreeHtml && $oPluginFreeHtml->get_type() == 'template'}checked{/if} onkeyup="if ($('input[name=type]:checked').val() == 'template') { $('textarea[name=content]').attr('class', ''); }"/> {gettext word='Template'} - 
+                        <input type="radio" name="type" value="free" class="minimal" {if $oPluginFreeHtml && $oPluginFreeHtml->get_type() == 'free'}checked{/if} onkeyup="if ($('input[name=type]:checked').val() == 'free') { $('textarea[name=content]').attr('class', 'contentFreeHtml'); }"/> {gettext word='Free'}
+                    </div>
+                </td>
+            </tr>
+            <tr>
                 <td>{gettext word='Content'}:</td>
-                <td><textarea name="content" placeholder="{gettext word='EnterTheContent'}" style="width:1000px;height:500px;" novalidate>{if $oPluginFreeHtml}{$oPluginFreeHtml->get_content()}{/if}</textarea></td>
+                <td><textarea name="content" placeholder="{gettext word='EnterTheContent'}" style="width:1000px;height:500px;" novalidate {if $oPluginFreeHtml && $oPluginFreeHtml->get_type() == 'free'}class="contentFreeHtml"{/if}>{if $oPluginFreeHtml}{$oPluginFreeHtml->get_content()}{/if}</textarea></td>
             </tr>
             <tr>
                 <td></td>
