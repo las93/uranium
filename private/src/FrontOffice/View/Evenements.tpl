@@ -4,21 +4,24 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="skills">
-                        <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; Les rôles</p><br/></div>
-                       <h2>Les différents rôles du scrum</h2>
+                        <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; Les évênements</p><br/></div>
+                       <h2>Le sprint</h2>
                         <div class="skill_right">
-                            <p>Par défaut dans le scrum, il y a 3 rôles principaux : </p>
-                            <p>1/ <a href="/agile-scrum/les-roles/equipe-de-developpement/" style="color:#AAFFFF">L'équipe de développement</a></p>
-                            <p>2/ <a href="/agile-scrum/les-roles/scrum-master/" style="color:#AAFFFF">Le Srum Master</a></p>
-                            <p>3/ <a href="/agile-scrum/les-roles/product-owner/" style="color:#AAFFFF">Le Product Owner</a></p>
-                            <p>D'autres rôles dit extérieurs viennent intéragir avec l'équipe Scrum comme par exemple : le manager ou les équipes métiers.</p>
-                            <p>Une équipe de manager peut également fonctionner en scrum en rassemblant le travail de toutes les équipes de développements sous un même tableau. On parlera d'ailleurs d'une gestion des epics et non des user story.</p>
+                            <p>Souvent mal compris, l'agile Scrum n'est pas "agile" mais est une méthode d'organisation de travail très stricte que l'on doit d'ailleurs bien suivre si on désire en tirer un maximum de bénéfice.</p>
+                            <p>En scrum nous travaillons en Sprint. Le sprint est une période de temps définie en amont que l'on devra respecter pour réaliser des développements. Tout le travail de l'équipe de développement se basera sur ce concept de sprint.</p>
+                            <p>Un sprint doit durer entre 2 semaines et 4 semaines que l'on choisit souvent selon le risque de changement de priorisation et des perturbations. Si on a le risque de voir régulièrement des priorités changer, on priviliegira des sprint de 2 semaines.</p>
+                            <p>Pour être efficace, chaque sprint doit toujours être de même durée pour une équipe de développement ; les sprint à durée variable sont normalement interdit.</p>
+                            <p>On ne peut pas modifier une équipe en cours de Sprint. L'équipe doit impérativement être la même du début jusqu'à la fin du Sprint.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/bg.jpg" alt="">
+                        <img src="/img/sprint.jpg" alt="">
+                        <p><br/>1/ <a href="/agile-scrum/les-roles/equipe-de-developpement/" style="color:#AAFFFF">La Daily Scrum / Standup Meeting</a></p>
+                        <p>2/ <a href="/agile-scrum/les-roles/scrum-master/" style="color:#AAFFFF">La Sprint Planning Meeting</a></p>
+                        <p>3/ <a href="/agile-scrum/les-roles/product-owner/" style="color:#AAFFFF">La Sprint Review</a></p>
+                        <p>3/ <a href="/agile-scrum/les-roles/product-owner/" style="color:#AAFFFF">La Sprint Review</a></p>
                     </div>
                 </div>
             </div>
@@ -39,11 +42,9 @@
                 <div class="col-md-6">
                     <div class="story_text wow slideInRight" data-wow-duration="2s">
                         <h2>Les équipes métiers</h2>
-                        <p>Dans les grandes entreprises, le client est souvent l'ensemble des équipes métiers (service marketing, service paie, service produit, service publicité...). Les équipes métiers représentent un élément important du Scrum lorsqu'elles constituent ensemble le client.</p>
-
-                        <p>Sans la mise en place de la transparence, les différentes équipes métiers se combattent la priorité de leurs propres projets. Cela se fait souvent ressentir au sein des équipes techniques surtout quand le comité de direction impose un calendrier infernal ; il est souvent incapable de bien juger le temps nécessaire pour la mise en place de chaque projet.</p>
-
-                        <p>En étant régulièrement invités aux Sprint Review afin de voir tout le travail accomplit par l'équipe de développement et en participant à une Sprint Priority By Business Value animée par le Product Owner et le Scrum Master, les équipes métiers deviennent compréhensives du travail effectué par les équipes techniques.</p>
+                            
+                            <p>D'autres rôles dit extérieurs viennent intéragir avec l'équipe Scrum comme par exemple : le manager ou les équipes métiers.</p>
+                            <p>Une équipe de manager peut également fonctionner en scrum en rassemblant le travail de toutes les équipes de développements sous un même tableau. On parlera d'ailleurs d'une gestion des epics et non des user story.</p>
                     </div>
                 </div>
             </div>

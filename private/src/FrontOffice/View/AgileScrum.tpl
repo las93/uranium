@@ -7,8 +7,8 @@
                         <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; Définition Agile-Scrum</p><br/></div>
                        <h2>Sommaire</h2>
                         <div class="skill_right">
-                            <p>1/ <a href="/agile-scrum/les-roles/" style="color:white">Les rôles</a></p>
-                            <p>2/ Les évènements (à venir)</p>
+                            <p>1/ <a href="/agile-scrum/les-roles/" style="color:#AAFFFF">Les rôles</a></p>
+                            <p>2/ <a href="/agile-scrum/evenements/" style="color:#AAFFFF">Les évènements</a></p>
                             <p>3/ Les artéfacts (à venir)</p>
                             <p>4/ Les pratiques complémentaires (à venir)</p>
                             <p>5/ Les risques dans le Scrum (à venir)</p>
