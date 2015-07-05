@@ -17,11 +17,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/sprint.jpg" alt="">
-                        <p><br/>1/ <a href="/agile-scrum/les-roles/equipe-de-developpement/" style="color:#AAFFFF">La Daily Scrum / Standup Meeting</a></p>
-                        <p>2/ <a href="/agile-scrum/les-roles/scrum-master/" style="color:#AAFFFF">La Sprint Planning Meeting</a></p>
-                        <p>3/ <a href="/agile-scrum/les-roles/product-owner/" style="color:#AAFFFF">La Sprint Review</a></p>
-                        <p>3/ <a href="/agile-scrum/les-roles/product-owner/" style="color:#AAFFFF">La Sprint Review</a></p>
+                        <img src="/img/sprint.jpg" alt="calendrier de sprint" title="calendrier de sprint">
+                        <p><br/>1/ La Daily Scrum / Standup Meeting (à venir)</p>
+                        <p>2/ <a href="/agile-scrum/evenements/sprint-planning-meeting/" style="color:#AAFFFF">La Sprint Planning Meeting</a></p>
+                        <p>3/ La Sprint Review (à venir)</p>
+                        <p>4/ La Sprint Retrospective (à venir)</p>
                     </div>
                 </div>
             </div>
@@ -35,16 +35,17 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/marketing.jpg" alt="">
+                        <img src="/img/scrum-postit.jpg" alt="Scrum grooming" title="Scrum grooming">
                     </div>
-                    <p>Attention, les équipes métiers ne sont pas toujours présentes dans le scrum</p>
                 </div>
                 <div class="col-md-6">
                     <div class="story_text wow slideInRight" data-wow-duration="2s">
-                        <h2>Les équipes métiers</h2>
+                        <h2>Le Backlog Grooming</h2>
                             
-                            <p>D'autres rôles dit extérieurs viennent intéragir avec l'équipe Scrum comme par exemple : le manager ou les équipes métiers.</p>
-                            <p>Une équipe de manager peut également fonctionner en scrum en rassemblant le travail de toutes les équipes de développements sous un même tableau. On parlera d'ailleurs d'une gestion des epics et non des user story.</p>
+                            <p>Cette réunion (qu'on appelle aussi Backlog Refinement Meeting) permet au Product Owner de proposer des user-stories qu'il a écrit dans un but de les prioriser. L'équipe de développement peut invalider les user-storie si elles ne sont pas assez complètes. Si elles sont complètes, l'équipe va indiquer la complexité des user-stories avec une méthode telle que la Poker Planning.</p>
+                            <p>En Scrum, certains font ce travail directement au cours de la Sprint Planning Meeting ; cependant pour ma part, je privilégie cette réunion hebdomadaire afin de rendre la Sprint Planning Meeting plus courte et pour supprimer la sensation de réunionite.</p>
+                            <p>Le Scrum Master est très important lors de cette réunion car il doit bien visualiser si chaque membre de l'équipe a bien compris la user-story ; il va également animer la poker planning et valider la compléxité choisit par l'équipe.</p>
+                            <p>Cette réunion dure 1h maximum par semaine et ne doit être mise en place que si l'équipe gère plusieurs epics (ou projets) en même temps.</p>
                     </div>
                 </div>
             </div>
@@ -58,16 +59,17 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="experience wow slideInLeft">
-                        <h2>Le manager</h2>
-                        <p>Dans une équipe, il est important d'avoir un manager. En France, avec le turn-over très important en informatique, le manager est d'autant plus important pour effectuer différents rôles : entretiens d'embauches, entretiens annuels, validation des congés...</p>
-                        <p>En scrum, il n'est pas rare que le manager endosse aussi le rôle de Scrum Master mais il doit alors bien différencier les deux rôles. Il ne doit pas être un Scrum Master directif mais doit être présent pour être le protecteur de l'équipe à chaque moment, un véritable coach de la méthodologie.</p>
-                        <p>Le manager ne doit pas gérer le travail de l'équipe mais doit laisser intégralement la méthode scrum s'appliquer.</p>
+                        <h2>La Priority Meeting</h2>
+                        <p>Cette réunion peut être ajoutée lorsque les clients de l'équipe de développement sont multiples. Le Scrum Master et le Product Owner vont rassembler l'ensemble des clients afin de les faire prioriser l'ensemble de leurs demandes.</p>
+                        <p>Lors de cette réunion, les métiers seront obligé de choisir une Business Value qui sera plus forte si la demande est plus prioritaire qu'une autre. On propose ce type de board aux clients (voir à droite) où les métiers devront mettre leurs demandes sur une même ligne avec interdiction de superposer 2 demandes.</p>
+                        <p>Cette Business Value (forcée) permettra d'aider le Product Owner a mieux prioriser les demandes ; il prendra également en compte la complexité décidée par l'ensemble de l'équipe.</p>
+                        <p>Le Scrum Master peut adapter la réunion pour maximiser sa productivité ou pour améliorer le trvaail du Product Owner à la suite de celle-ci.</p>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/manager.jpg" alt="">
+                        <img src="/img/scrum-priority-meeting.jpg" alt="La scrum priority meeting" title="La scrum priority meeting">
                     </div>
                 </div>
             </div>
