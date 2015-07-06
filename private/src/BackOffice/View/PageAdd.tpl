@@ -40,6 +40,10 @@
                 <td><input name="description" class="form-control" type="text" placeholder="{gettext word='EnterTheDescription'}" required{if $oPage} value="{$oPage->get_description()}"{/if} maxlength="250"></td>
             </tr>
             <tr>
+                <td>{gettext word='NoFollow'}:</td>
+                <td><input name="nofollow" class="form-control" type="radio" value="yes"{if $oPage->get_nofollow() == 'yes'} checked="checked"{/if}> {gettext word='Yes'} - <input name="nofollow" class="form-control" type="radio" value="no"{if !$oPage->get_nofollow() || $oPage->get_nofollow() == 'no'} checked="checked"{/if}> {gettext word='No'}</td>
+            </tr>
+            <tr>
                 <td></td>
                 <td><input type="submit" class="form-control" value="{gettext word='Validate'}"></td>
             </tr>

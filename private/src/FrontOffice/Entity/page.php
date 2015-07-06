@@ -143,6 +143,15 @@ class page extends Entity
     private $order = null;
 	
 	/**
+	 * nofollow
+	 *
+	 * @access private
+	 * @var    string
+	 *
+	 */
+    private $nofollow = null;
+	
+	/**
 	 * get id of page
 	 *
 	 * @access public
@@ -460,6 +469,30 @@ class page extends Entity
 	public function set_order($order) 
 	{
 		$this->order = $order;
+		return $this;
+	}
+	
+	/**
+	 * get nofollow of page
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function get_nofollow()
+	{
+		return $this->nofollow;
+	}
+
+	/**
+	 * set nofollow of page
+	 *
+	 * @access public
+	 * @param  string $nofollow nofollow of page
+	 * @return \Venus\src\FrontOffice\Entity\page
+	 */
+	public function set_nofollow($nofollow) 
+	{
+		$this->nofollow = $nofollow;
 		return $this;
 	}
 	}

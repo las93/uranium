@@ -28,6 +28,9 @@
     "Parent":"Parent",
     "NoParent":"Pas de parent",
     "Order":"Ordre",
+    "NoFollow":"No follow",
+    "Yes":"Oui",
+    "No":"Non",
 
     "Boards":"Boards",
     "Projects":"Projets",

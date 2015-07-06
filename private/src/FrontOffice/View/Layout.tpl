@@ -8,6 +8,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{$oPage->get_title()}</title>
     <meta name="Description" content="{$oPage->get_description()}">
+    {if $oPage->get_nofollow() == 'yes'}
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="googlebot" content="noindex,nofollow">
+    {/if}
     <!-- normalizar -->
     <link href="/css/normalize.css" rel="stylesheet">
 
@@ -69,7 +73,7 @@
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
                                     {foreach from=$aSummary item=$oSummaryPage}
-                                        <li><a href="{$oSummaryPage->get_url()}">{$oSummaryPage->get_name()}</a></li>
+                                        <li><a href="{$oSummaryPage->get_url()}"{if $oSummaryPage->get_nofollow() == 'yes'} rel="nofollow"{/if}>{$oSummaryPage->get_name()}</a></li>
                                     {/foreach}
                                 </ul>
                             </div>
@@ -168,6 +172,17 @@
 
     <!-- main js -->
     <script src="/js/main.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-64855607-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </body>
 
 </html>

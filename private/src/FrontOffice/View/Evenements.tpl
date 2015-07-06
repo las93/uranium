@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="skills">
-                        <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; Les évênements</p><br/></div>
+                        <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; Le sprint</p><br/></div>
                        <h2>Le sprint</h2>
                         <div class="skill_right">
                             <p>Souvent mal compris, l'agile Scrum n'est pas "agile" mais est une méthode d'organisation de travail très stricte que l'on doit d'ailleurs bien suivre si on désire en tirer un maximum de bénéfice.</p>
@@ -18,9 +18,9 @@
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
                         <img src="/img/sprint.jpg" alt="calendrier de sprint" title="calendrier de sprint">
-                        <p><br/>1/ La Daily Scrum / Standup Meeting (à venir)</p>
-                        <p>2/ <a href="/agile-scrum/evenements/sprint-planning-meeting/" style="color:#AAFFFF">La Sprint Planning Meeting</a></p>
-                        <p>3/ La Sprint Review (à venir)</p>
+                        <p><br/>1/ <a href="/agile-scrum/sprint/daily-scrum/" style="color:#AAFFFF">La Daily Scrum / Standup Meeting</a></p>
+                        <p>2/ <a href="/agile-scrum/sprint/sprint-planning-meeting/" style="color:#AAFFFF">La Sprint Planning Meeting</a></p>
+                        <p>3/ <a href="/agile-scrum/sprint/sprint-review/" style="color:#AAFFFF">La Sprint Review</a></p>
                         <p>4/ La Sprint Retrospective (à venir)</p>
                     </div>
                 </div>

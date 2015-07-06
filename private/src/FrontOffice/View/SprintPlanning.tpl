@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="skills">
-                        <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; <a href="/agile-scrum/evenements/" style="color:white">Les évênements</a> &gt; Le sprint planning meeting</p><br/></div>
+                        <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; <a href="/agile-scrum/sprint/" style="color:white">Le sprint</a> &gt; Le sprint planning meeting</p><br/></div>
                        <h2>Le sprint planning meeting</h2>
                         <div class="skill_right">
                             <p>Par défaut cette réunion est le premier travail réalisé par l'ensemble de l'équipe sur un Sprint et dure 8h pour un sprint de 4 semaines (4h pour un sprint de 2 semaines). Si votre équipe fait également une Backlog Grooming, il est fort possible que 2h suffise pour cette sprint planning meeting.</p>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/sprint-planning-meeting.png" alt="sprint planning meeting title="sprint planning meeting">
+                        <img src="/img/sprint-planning-meeting.png" alt="sprint planning meeting" title="sprint planning meeting">
                     </div>
                 </div>
             </div>
