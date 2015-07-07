@@ -8,6 +8,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{$oPage->get_title()}</title>
     <meta name="Description" content="{$oPage->get_description()}">
+    
+    <meta name="Keywords" content="scrum, agile, sprint, review, daily, product owner, scrum master">
     {if $oPage->get_nofollow() == 'yes'}
         <meta name="robots" content="noindex,nofollow">
         <meta name="googlebot" content="noindex,nofollow">
@@ -85,7 +87,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="header_area_text">
-                        <h2 class="wow slideInDown" data-wow-duration="2s">Devenez agile en adoptant la méthodologie Scrum</h2>
+                        <h1 class="wow slideInDown" data-wow-duration="2s" style="color:white;font-size:50px;">Devenez agile en adoptant la méthodologie Scrum</h1>
                         <p class="wow slideInUp">Adopter la méthodologie Agile Scrum qui a fait ses preuves dans de grandes entreprises ; elles ont su obtenir une meilleure productivité avec cette organisation de travail contrairement à leurs anciens projets cycle en V.</p>
                         <a class="wow slideInUp" data-wow-duration="2s" href="">Adopter le Scrum</a>
                     </div>
@@ -123,7 +125,9 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="company_logo wow slideInDown">
-                        <h2>Scrum-Agile.com</h2>
+                        <h2 itemprop="name">Scrum-Agile.com</h2>
+        <span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+        <span itemprop="ratingValue">4.7</span>/<span itemprop="bestRating">5</span> pour <span itemprop="ratingCount">43434</span> utilisateurs
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -153,6 +157,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- main jQuery-->
     <script src="/js/jquery-1.11.3.min.js"></script>
