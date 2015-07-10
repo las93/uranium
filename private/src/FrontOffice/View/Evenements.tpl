@@ -42,7 +42,7 @@
                     <div class="story_text wow slideInRight" data-wow-duration="2s">
                         <h2>Le Backlog Grooming</h2>
                             
-                            <p>Cette réunion (qu'on appelle aussi Backlog Refinement Meeting) permet au Product Owner de proposer des user-stories qu'il a écrit dans un but de les prioriser. L'équipe de développement peut invalider les user-storie si elles ne sont pas assez complètes. Si elles sont complètes, l'équipe va indiquer la complexité des user-stories avec une méthode telle que la Poker Planning.</p>
+                            <p>Cette réunion (qu'on appelle aussi Backlog Refinement Meeting) permet au Product Owner de proposer des user-stories qu'il a écrit dans un but de les prioriser. L'équipe de développement peut invalider les user-stories si elles ne sont pas assez complètes. Si elles sont complètes, l'équipe va indiquer la complexité des user-stories avec une méthode telle que la Poker Planning.</p>
                             <p>En Scrum, certains font ce travail directement au cours de la Sprint Planning Meeting ; cependant pour ma part, je privilégie cette réunion hebdomadaire afin de rendre la Sprint Planning Meeting plus courte et pour supprimer la sensation de réunionite.</p>
                             <p>Le Scrum Master est très important lors de cette réunion car il doit bien visualiser si chaque membre de l'équipe a bien compris la user-story ; il va également animer la poker planning et valider la compléxité choisit par l'équipe.</p>
                             <p>Cette réunion dure 1h maximum par semaine et ne doit être mise en place que si l'équipe gère plusieurs epics (ou projets) en même temps.</p>
@@ -60,7 +60,7 @@
                 <div class="col-md-6">
                     <div class="experience wow slideInLeft">
                         <h2>La Priority Meeting</h2>
-                        <p>Cette réunion peut être ajoutée lorsque les clients de l'équipe de développement sont multiples. Le Scrum Master et le Product Owner vont rassembler l'ensemble des clients afin de les faire prioriser l'ensemble de leurs demandes.</p>
+                        <p>Cette réunion peut être ajoutée lorsque les clients de l'équipe de développement sont multiples. Le Scrum Master et le Product Owner vont rassembler l'ensemble des clients afin de leur faire prioriser l'ensemble de leurs demandes.</p>
                         <p>Lors de cette réunion, les métiers seront obligé de choisir une Business Value qui sera plus forte si la demande est plus prioritaire qu'une autre. On propose ce type de board aux clients (voir à droite) où les métiers devront mettre leurs demandes sur une même ligne avec interdiction de superposer 2 demandes.</p>
                         <p>Cette Business Value (forcée) permettra d'aider le Product Owner a mieux prioriser les demandes ; il prendra également en compte la complexité décidée par l'ensemble de l'équipe.</p>
                         <p>Le Scrum Master peut adapter la réunion pour maximiser sa productivité ou pour améliorer le trvaail du Product Owner à la suite de celle-ci.</p>
