@@ -57,6 +57,11 @@ class Home extends Controller {
 
 	public function show() {
 
+	    if ($_SERVER['HTTP_HOST'] == 'scrum-agile.com') {
+	        
+	        $this->redirect('http://www.scrum-agile.com'.$_SERVER['REQUEST_URI']);
+	    }
+	    
 	    $oPage = new Page;
 	    $oActualPage = $oPage->findOneByurl($_SERVER['REQUEST_URI']);
 
