@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                     <div class="skills">
                         <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; <a href="/agile-scrum/les-roles/" style="color:white">Les rôles</a> &gt; L'équipe de développement</p><br/></div>
-                       <h2>L'équipe de développement en scrum</h2>
+                       <h1>L'équipe de développement en scrum</h1>
                         <div class="skill_right">
                             <p>L'équipe de développement en scrum doit être constituée de 3 à 9 personnes qui devra livrer différents projets en fin de Sprint (dans certains cas, les mises en production seront multiples en cours de sprint).</p>
                             <p>Contrairement à d'autres méthodes de travail, l'équipe de développement est autonome et va s'auto-gérer elle même. Le Scrum Master pourra lui venir en aide en cas de blocage mais ne viendra pas entraver l'autonomie de cette équipe.</p>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/dev.jpg" alt="">
+                        <img src="/img/dev.jpg" alt="Scrum agile, l'équipe de développeur" title="Scrum agile, l'équipe de développeur">
                         <p><br/>Le manager gèra les aspects administratifs mais ne pourra pas donner de taches à réaliser sans l'accord du Product Ownner.</p>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/test.jpg" alt="">
+                        <img src="/img/test.jpg" alt="un testeur fonctionnel humain en scrum" title="un testeur fonctionnel humain en scrum">
                     </div>
                 </div>
                 <div class="col-md-6">

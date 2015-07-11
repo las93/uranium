@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                     <div class="skills">
                         <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; Définition Agile-Scrum</p><br/></div>
-                       <h2>Sommaire</h2>
+                       <h1>Définition de l'agile Scrum</h1>
                         <div class="skill_right">
                             <p>1/ <a href="/agile-scrum/les-roles/" style="color:#AAFFFF">Les rôles</a></p>
                             <p>2/ <a href="/agile-scrum/sprint/" style="color:#AAFFFF">Les évènements</a></p>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/bg.jpg" alt="">
+                        <img src="/img/agile-scrum.png" alt="Définition de l'Agile Scrum" title="Définition de l'Agile Scrum">
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/scrum.jpg" alt="">
+                        <img src="/img/scrum.jpg" alt="scrum trop de post it" title="scrum trop de post it">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -66,7 +66,7 @@
 
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/revolution.jpg" alt="">
+                        <img src="/img/revolution.jpg" alt="scrum agile - la révolution" title="scrum agile - la révolution">
                     </div>
                 </div>
             </div>

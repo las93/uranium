@@ -113,7 +113,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="single_blog wow slideInUp" data-wow-duration="1s">
-                        <img class="img-responsive" src="img/1.jpg" alt="">
+                        <img class="img-responsive" src="img/1.jpg" alt="scrum et projets cycle en V" title="scrum et projets cycle en V">
                         <h2>Mon entreprise est vraiment attachée aux projets cycle en V</h2>
                         <div class="comment_area fix">
                             <div class="date floatleft">
@@ -128,7 +128,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="single_blog wow slideInUp" data-wow-duration="2s">
-                        <img class="img-responsive" src="img/2.jpg" alt="">
+                        <img class="img-responsive" src="img/2.jpg" alt="Comment gérer ma dette technique en Scrum" title="Comment gérer ma dette technique en Scrum">
                         <h2>Comment gérer ma dette technique en Scrum</h2>
                         <div class="comment_area fix">
                             <div class="date floatleft">
@@ -143,7 +143,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="single_blog wow slideInUp" data-wow-duration="3s">
-                        <img class="img-responsive" src="img/3.jpg" alt="">
+                        <img class="img-responsive" src="img/3.jpg" alt="Comment faire mes boards scrum agile" title="Comment faire mes boards scrum agile">
                         <h2>Comment faire mes boards ?</h2>
                         <div class="comment_area fix">
                             <div class="date floatleft">

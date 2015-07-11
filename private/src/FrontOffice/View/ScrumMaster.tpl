@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                     <div class="skills">
                         <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; <a href="/agile-scrum/les-roles/" style="color:white">Les rôles</a> &gt; Le scrum master</p><br/></div>
-                       <h2>Le scrum master</h2>
+                       <h1>Le scrum master</h1>
                         <div class="skill_right">
                             <p>Le rôle de scrum master est souvent le rôle le plus incompris ; il n'est ni un chef de projet, ni un manager. Le scrum Master est un véritable coach au sein de l'équipe voire de l'entreprise. On pourrait le définir comme un véritable évengéliste de la méthode scrum.</p>
                             <p>Le Scrum Master va assister chaque membre de l'équipe afin de permettre à l'ensemble de l'équipe de maximiser la valeur de son travail. Il est clairement le protecteur de l'équipe scrum dont il fait parti.</p>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/scrummaster.jpg" alt="">
+                        <img src="/img/scrummaster.jpg" alt="scrum agile - question sur les post it" title="scrum agile - question sur les post it">
                         <p><br/>Un scrum master aura toujours sa malette remplit de scotch colorés, de feutres et de post'it de différentes tailles pour l'animation de l'ensemble des boards.</p>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/coach.jpg" alt="">
+                        <img src="/img/coach.jpg" alt="véritable coach agile scrum" title="véritable coach agile scrum">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -65,7 +65,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/communiquer.jpg" alt="">
+                        <img src="/img/communiquer.jpg" alt="le scrum c'est Communication, protection et rassemblement" title="le scrum c'est Communication, protection et rassemblement">
                         <p><br/>Le scrum master n'hésitera pas à rassembler l'équipe si certains points sont à éclaircir afin de ne pas laisser des doutes planer ; il proposera à l'équipe également de définir un axe d'amélioration lors de la rétrospective pour le sprint suivant.</p>
                     </div>
                 </div>

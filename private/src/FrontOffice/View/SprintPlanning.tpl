@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                     <div class="skills">
                         <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; <a href="/agile-scrum/sprint/" style="color:white">Le sprint</a> &gt; Le sprint planning meeting</p><br/></div>
-                       <h2>Le sprint planning meeting</h2>
+                       <h1>Le sprint planning meeting</h1>
                         <div class="skill_right">
                             <p>Par défaut cette réunion est le premier travail réalisé par l'ensemble de l'équipe sur un Sprint et dure 8h pour un sprint de 4 semaines (4h pour un sprint de 2 semaines). Si votre équipe fait également une Backlog Grooming, il est fort possible que 2h suffise pour cette sprint planning meeting.</p>
                             <p>Cette réunion permet à l'équipe de savoir le travail qui sera à réaliser dans le courant du sprint ; il est recommandé que le Product Owner prépare en amont un Sprint Backlog respectant la vélocité du sprint précédent proportionnellement au temps de présence de l'équipe.</p>

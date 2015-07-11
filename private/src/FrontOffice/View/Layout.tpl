@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="logo">
-                        <h2><a href="">Scrum-Agile.com</a></h2>
+                        <h2><a href="/">Scrum-Agile.com</a></h2>
                     </div>
                 </div>
                 <div class="col-sm-8">
@@ -112,7 +112,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="call_project text-right wow slideInRight" data-wow-duration="2s">
-                        <a href="">Formations en ligne</a>
+                        <a href="/formations-scrum-en-ligne/" rel="nofollow">Formations en ligne</a>
                     </div>
                 </div>
             </div>

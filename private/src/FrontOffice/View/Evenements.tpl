@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                     <div class="skills">
                         <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; Le sprint</p><br/></div>
-                       <h2>Le sprint</h2>
+                       <h1>Le sprint</h1>
                         <div class="skill_right">
                             <p>Souvent mal compris, l'agile Scrum n'est pas "agile" mais est une méthode d'organisation de travail très stricte que l'on doit d'ailleurs bien suivre si on désire en tirer un maximum de bénéfice.</p>
                             <p>En scrum nous travaillons en Sprint. Le sprint est une période de temps définie en amont que l'on devra respecter pour réaliser des développements. Tout le travail de l'équipe de développement se basera sur ce concept de sprint.</p>
@@ -63,7 +63,7 @@
                         <p>Cette réunion peut être ajoutée lorsque les clients de l'équipe de développement sont multiples. Le Scrum Master et le Product Owner vont rassembler l'ensemble des clients afin de leur faire prioriser l'ensemble de leurs demandes.</p>
                         <p>Lors de cette réunion, les métiers seront obligé de choisir une Business Value qui sera plus forte si la demande est plus prioritaire qu'une autre. On propose ce type de board aux clients (voir à droite) où les métiers devront mettre leurs demandes sur une même ligne avec interdiction de superposer 2 demandes.</p>
                         <p>Cette Business Value (forcée) permettra d'aider le Product Owner a mieux prioriser les demandes ; il prendra également en compte la complexité décidée par l'ensemble de l'équipe.</p>
-                        <p>Le Scrum Master peut adapter la réunion pour maximiser sa productivité ou pour améliorer le trvaail du Product Owner à la suite de celle-ci.</p>
+                        <p>Le Scrum Master peut adapter la réunion pour maximiser sa productivité ou pour améliorer le travail du Product Owner à la suite de celle-ci.</p>
                     </div>
                 </div>
 

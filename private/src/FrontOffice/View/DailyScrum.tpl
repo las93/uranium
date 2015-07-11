@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                     <div class="skills">
                         <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; <a href="/agile-scrum/sprint/" style="color:white">Le sprint</a> &gt; La daily scrum</p><br/></div>
-                       <h2>La Daily Scrum</h2>
+                       <h1>La Daily Scrum</h1>
                         <div class="skill_right">
                             <p>C'est réunion journalière (exceptée le premier jour de sprint) a poru but de rassembler l'ensemble de l'équipe afin de communiquer sur le travail effectué la veille, la travail qui sera effectué dans le courant de la journée et les éventuelles difficultés de chaque développeur.</p>
                             <p>Elle ne doit durer que 15 minutes au maximum peu importe les circonstances ; il ne faut surtout pas s'étaler sur les sujets car cela deviendrait contre productif. En cas de besoin, cela doit être fait après cette réunion journalière avec chaque personne concernée.</p>

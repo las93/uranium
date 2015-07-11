@@ -5,17 +5,18 @@
                 <div class="col-md-6">
                     <div class="skills">
                         <div class="skill_right"><p><a href="{url alias='home'}" style="color:white">Accueil</a> &gt; <a href="/agile-scrum/" style="color:white">Définition Agile-Scrum</a> &gt; <a href="/agile-scrum/sprint/" style="color:white">Le sprint</a> &gt; La sprint review</p><br/></div>
-                       <h2>La Sprint Review</h2>
+                       <h1>La Sprint Review</h1>
                         <div class="skill_right">
-                            <p>C'est réunion journalière (exceptée le premier jour de sprint) a pour but de rassembler l'ensemble de l'équipe afin de communiquer sur le travail effectué la veille, la travail qui sera effectué dans le courant de la journée et les éventuelles difficultés de chaque développeur.</p>
-                            <p>Elle ne doit durer que 15 minutes au maximum peu importe les circonstances ; il ne faut surtout pas s'étaler sur les sujets car cela deviendrait contre productif. En cas de besoin, cela doit être fait après cette réunion journalière avec chaque personne concernée.</p>
-                            <p>Cette daily scrum a pour but de faire apparaitre quotidiennement l'inspection et l'adaptation. En cas de dysfonctionnement, on peut rapidement adapter.</p>
+                            <p>Cette réunion principalement animée par le Product Owner a pour but de présenter aux différents clients les travaux réalisés lors du Sprint, pour leur indiquer les éléments qui ont perturbés le sprint et ce qui sera réalisé dans les prochains sprint sans détailler (afin que ce ne soit pas pris au mot par les clients).</p>
+                            <p>Cette réunion se fait le dernier jour du Sprint juste avant la Rétrospective et peut durer de 1 heure à 4 heures maximum. Seuls les éléments intégralement terminés sont considérés comme présentables à cette réunion.</p>
+                            <p>Le product owner va amener les clients à participer activement à la réunion en les amenant à poser des questions.</p>
+                            <p>Il est important que les membres de l'équipe de développement participent aux démonstrations réalisées afin d'apporter des précisions sur les projets présentés.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/daily-scrum.jpg" alt="daily scrum" title="daily scrum">
+                        <img src="/img/sprint-review.jpg" alt="La Sprint Review" title="La Sprint Review">
                     </div>
                 </div>
             </div>
@@ -29,16 +30,15 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/stand-up-meeting.jpg" alt="Stand-up meeting" title="Stand-up meeting">
+                        <img src="/img/clients.jpg" alt="clients en scrum agile" title="clients en scrum agile">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="story_text wow slideInRight" data-wow-duration="2s">
-                        <h2>Stand-up meeting</h2>
-                            <p>La stand-up meeting est la réunion "daily scrum" la plus répendue où l'ensemble de l'équipe se rassemble debout face au board du scrum master.</p>
-                            <p>Avec un board complet, chaque développeur va se présenter devant le board puis va pointer les taches en cours afin d'animer les mots par des gestes. Ce sont des gestes qui permettent d'attirer l'attention de l'ensemble de l'équipe.</p>
-                            <p>En cas de membre d'équipe à distance, il faut si possible lui donner accès par webcam au board et communiquer avec lui en conférence afin qu'il se sente concerné par cette réunion.</p>
-                            <p>On ne doit jamais laisser un évênement perturber la Stand-up Meeting : un absent rejoindra la stand-up discrètement, les urgences seront gérés par des membres volontaires de l'équipe... Une Stand-up Meeting ne doit pas être repoussée ou même changer d'horaire.</p>
+                        <h2>Pourquoi inviter les clients ?</h2>
+                            <p>Il est indispensable d'inviter les clients à la revue du sprint afin que tous les clients comprennent bien le travail effectué par l'équipe de développement. Ils seront plus compréhensifs à la suite sur le travail réalisé par l'équipe et baissera la pression qu'elle porte sur l'équipe.</p>
+                            <p>En scrum, on doit jouer la transparence donc il faut lors de la review bien présenter concrètement tout ce qui s'est passé : projet terminé, projet en retard, éléments perturbateurs....</p>
+                            <p>Il faudra que le Product Owner fasse le nécessaire pour inviter les clients les plus innaccessibles tels que le comité de direction ou les clients les plus récalcitrant à la méthode Scrum.</p>
                     </div>
                 </div>
             </div>

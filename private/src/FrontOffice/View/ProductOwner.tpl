@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/time.jpg" alt="">
+                        <img src="/img/time.jpg" alt="product owner - responsable des priorisations" title="product owner - responsable des priorisations">
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="story_image wow slideInLeft" data-wow-duration="2s">
-                        <img src="/img/backlog.jpg" alt="">
+                        <img src="/img/backlog.jpg" alt="le product owner est créateur de Sprint Backlog" title="le product owner est créateur de Sprint Backlog">
                     </div>
                 </div>
                 <div class="col-md-6">
